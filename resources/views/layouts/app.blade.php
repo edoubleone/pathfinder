@@ -22,6 +22,7 @@
    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
    <link rel="stylesheet" href="{{ asset('assets/css/spacing.css') }}">
    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+   <link rel="stylesheet" href="{{ asset('assets/css/cookie-consent-new.css') }}">
    @yield('extra_css')
 </head>
 
@@ -186,6 +187,8 @@
                            <li><a href="{{ route('services') }}">Services</a></li>
                            <li><a href="{{ route('process') }}">Our Process</a></li>
                            <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                           <li><a href="{{ route('terms') }}">Terms of Service</a></li>
+                           <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
                         </ul>
                      </div>
                   </div>
@@ -233,7 +236,11 @@
       <!--footer-area-end -->
    </footer>
 
+   <!-- GDPR Cookie Consent Banner -->
+   @include('components.cookie-consent')
+
    <!-- JS here -->
+   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
    <script src="{{ asset('assets/js/jquery.js') }}"></script>
    <script src="{{ asset('assets/js/waypoints.js') }}"></script>
    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
