@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+
 class ContactController extends Controller
 {
     public function show()
@@ -35,14 +36,15 @@ class ContactController extends Controller
             Log::warning('Contact form email failed: ' . $e->getMessage());
         }
 
-        // Split name into first and last
+        // Split name
         $nameParts = explode(' ', $validated['name'], 2);
         $firstName = $nameParts[0];
         $lastName  = $nameParts[1] ?? '';
 
         // Send to GoHighLevel
         try {
-            Http::withHeaders([
+
+            $response = Http::withHeaders([
                 'Authorization' => 'Bearer ' . env('GHL_ACCESS_TOKEN'),
                 'Content-Type'  => 'application/json',
                 'Version'       => '2021-07-28'
@@ -59,8 +61,19 @@ class ContactController extends Controller
                     ]
                 ]
             ]);
+
+            // LOG THE RESPONSE
+            Log::info('GoHighLevel API Response', [
+                'status' => $response->status(),
+                'headers' => $response->headers(),
+                'body' => $response->body(),
+                'json' => $response->json()
+            ]);
+
         } catch (\Exception $e) {
-            Log::warning('GoHighLevel API call failed: ' . $e->getMessage());
+            Log::error('GoHighLevel API call failed', [
+                'error' => $e->getMessage()
+            ]);
         }
 
         return redirect()
