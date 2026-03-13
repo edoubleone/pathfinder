@@ -254,6 +254,11 @@
    <script src="{{ asset('assets/js/isotope-pkgd.js') }}"></script>
    <script src="{{ asset('assets/js/imagesloaded-pkgd.js') }}"></script>
    <script src="{{ asset('assets/js/main.js') }}"></script>
+   <script 
+      src="https://widgets.leadconnectorhq.com/loader.js"  
+      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
+      data-widget-id="69b3cb38d3796644356f6683"   > 
+   </script>
    @yield('extra_js')
 
 </body>

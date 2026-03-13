@@ -394,6 +394,140 @@
    </div>
    <!--choice-area-end -->
 
+   <!--faq-area-start -->
+   <div class="faq__area pt-110 pb-110" id="faq-section">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-lg-8 col-12 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">
+               <div class="text-center mb-55">
+                  <h4 class="section-subtitle">FAQ</h4>
+                  <h2 class="section-title">Frequently Asked Questions</h2>
+                  <p>Get answers to the most common questions about our services and how we help small business owners stay protected and compliant.</p>
+               </div>
+            </div>
+         </div>
+         <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-10 col-12">
+               <div class="tp-custom-accordio-2">
+                  <div class="accordion" id="faqAccordion">
+
+                     <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".4s">
+                        <h2 class="accordion-header" id="faqHeading1">
+                           <button class="accordion-buttons" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                              <i class="fas fa-building"></i> What types of businesses do you work with?
+                           </button>
+                        </h2>
+                        <div id="faqCollapse1" class="accordion-collapse collapse show"
+                           aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              We work with small business owners, entrepreneurs, independent contractors, and growing SMBs across all industries. Whether you're just starting out or scaling an established business, we tailor our services to fit your specific needs and structure.
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
+                        <h2 class="accordion-header" id="faqHeading2">
+                           <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                              <i class="fas fa-file-alt"></i> What is included in business formation & structuring?
+                           </button>
+                        </h2>
+                        <div id="faqCollapse2" class="accordion-collapse collapse"
+                           aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              Our business formation service covers entity type selection (LLC, S-Corp, C-Corp, Sole Proprietorship), state registration filing, EIN (Employer Identification Number) acquisition, operating agreements, and initial compliance setup. We help you build on the right legal foundation from day one.
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".6s">
+                        <h2 class="accordion-header" id="faqHeading3">
+                           <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                              <i class="fas fa-calculator"></i> How does your tax filing & IRS readiness service work?
+                           </button>
+                        </h2>
+                        <div id="faqCollapse3" class="accordion-collapse collapse"
+                           aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              We handle federal and state business tax filings, estimated quarterly tax payments, deduction identification, and IRS correspondence management. Our team ensures your records are accurate and complete so you're never caught off guard during tax season or an IRS inquiry.
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".7s">
+                        <h2 class="accordion-header" id="faqHeading4">
+                           <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                              <i class="fas fa-shield-alt"></i> What happens if my business gets audited?
+                           </button>
+                        </h2>
+                        <div id="faqCollapse4" class="accordion-collapse collapse"
+                           aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              If you're already a client, we provide full audit support — reviewing your financial records, identifying compliance gaps, and guiding you through every step of the process. If you're facing an audit and need help immediately, we offer audit readiness assessments to get your records in order fast.
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".8s">
+                        <h2 class="accordion-header" id="faqHeading5">
+                           <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                              <i class="fas fa-university"></i> Do I really need a separate business bank account?
+                           </button>
+                        </h2>
+                        <div id="faqCollapse5" class="accordion-collapse collapse"
+                           aria-labelledby="faqHeading5" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              Absolutely. Mixing personal and business finances is one of the most common mistakes small business owners make — and one of the biggest red flags for IRS audits. We help you open the right business bank account and establish clean financial separation from day one, protecting your personal assets and simplifying your bookkeeping.
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
+                        <h2 class="accordion-header" id="faqHeading6">
+                           <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                              <i class="fas fa-chart-line"></i> How is Pathfinder311 different from a regular accountant or CPA?
+                           </button>
+                        </h2>
+                        <div id="faqCollapse6" class="accordion-collapse collapse"
+                           aria-labelledby="faqHeading6" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              Most CPAs focus on filing taxes once a year. We take a year-round, proactive approach to your business finances — from formation and structuring to ongoing P&L monitoring, compliance, and audit readiness. We're your dedicated financial protection partner, not just someone you call on April 14th.
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="accordion-items wow tpfadeUp" data-wow-duration=".7s" data-wow-delay="1s">
+                        <h2 class="accordion-header" id="faqHeading7">
+                           <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+                              <i class="fas fa-rocket"></i> How do I get started with Pathfinder311?
+                           </button>
+                        </h2>
+                        <div id="faqCollapse7" class="accordion-collapse collapse"
+                           aria-labelledby="faqHeading7" data-bs-parent="#faqAccordion">
+                           <div class="accordion-body">
+                              Getting started is simple. Reach out via our contact page or give us a call and we'll schedule a free consultation to understand your current situation, goals, and which of our services best fit your needs. From there, we create a tailored plan and get to work protecting your business.
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="text-center mt-50 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
+                  <p class="mb-25">Still have questions? We're happy to help.</p>
+                  <a href="{{ route('contact') }}" class="tp-btn">Contact Us</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--faq-area-end -->
+
    <!--blog-area-start -->
    <div class="blog__area grey-bg pt-110 pb-80">
       <div class="container">
@@ -467,5 +601,56 @@
       </div>
    </div>
    <!-- cta-area-end -->
+
+   <!-- schedule-popup-start -->
+   {{-- Iframe placed at body level so nextaflow's overlay renders full-screen correctly --}}
+   <iframe
+      src="https://link.nextaflow.net/widget/form/UN7kHoKuSKFnaSgzjP1B"
+      style="display:none;width:100%;height:100%;border:none;border-radius:4px"
+      id="popup-UN7kHoKuSKFnaSgzjP1B"
+      data-layout="{'id':'POPUP'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Request"
+      data-height="2256"
+      data-layout-iframe-id="popup-UN7kHoKuSKFnaSgzjP1B"
+      data-form-id="UN7kHoKuSKFnaSgzjP1B"
+      title="Request">
+   </iframe>
+   <script src="https://link.nextaflow.net/js/form_embed.js"></script>
+   <script>
+      (function () {
+         var popupId = 'popup-UN7kHoKuSKFnaSgzjP1B';
+
+         function nfOverlay() { return document.getElementById(popupId + '-overlay'); }
+         function nfDiv()     { return document.getElementById(popupId + '-div'); }
+
+         function openPopup(e) {
+            e.preventDefault();
+            var o = nfOverlay(), d = nfDiv();
+            if (o) o.style.display = 'block';
+            if (d) d.style.display = 'block';
+         }
+
+         // Suppress the auto-show on page load; buttons take control
+         window.addEventListener('load', function () {
+            setTimeout(function () {
+               var o = nfOverlay(), d = nfDiv();
+               if (o) o.style.display = 'none';
+               if (d) d.style.display = 'none';
+            }, 50);
+         });
+
+         // Wire up all schedule/call buttons
+         document.querySelectorAll('a[href="{{ route('contact') }}"]').forEach(function (el) {
+            el.addEventListener('click', openPopup);
+         });
+      })();
+   </script>
+   <!-- schedule-popup-end -->
 
 @endsection
