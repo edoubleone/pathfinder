@@ -17,9 +17,10 @@ class ContactController extends Controller
     public function send(Request $request)
     {
         $validated = $request->validate([
-            'name'    => 'required|string|max:255',
-            'email'   => 'required|email|max:255',
-            'message' => 'required|string|max:5000',
+            'name'        => 'required|string|max:255',
+            'email'       => 'required|email|max:255',
+            'message'     => 'required|string|max:5000',
+            'sms_consent' => 'nullable|boolean',
         ]);
 
         // Send Email
@@ -41,7 +42,13 @@ class ContactController extends Controller
         $firstName = $nameParts[0];
         $lastName  = $nameParts[1] ?? '';
 
-        // Send to GoHighLevel
+        // Send to GoHighLevel only if SMS consent was given
+        if (!$request->boolean('sms_consent')) {
+            return redirect()
+                ->route('contact')
+                ->with('success', 'Thank you! Your message has been sent. We will get back to you shortly.');
+        }
+
         try {
 
             $response = Http::withHeaders([

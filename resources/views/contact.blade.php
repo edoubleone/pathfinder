@@ -102,8 +102,24 @@
                         <input name="name" type="text" placeholder="Enter your Name" value="{{ old('name') }}">
                         <input name="email" type="email" placeholder="Enter your Mail" value="{{ old('email') }}">
                         <textarea name="message" placeholder="Enter your Message">{{ old('message') }}</textarea>
+
+                        <div style="margin-bottom:20px;display:flex;align-items:flex-start;gap:10px;">
+                           <input type="checkbox" name="sms_consent" id="sms_consent" value="1"
+                              style="width:16px;height:16px;min-width:16px;margin:3px 0 0 0;flex-shrink:0;display:inline-block;cursor:pointer;"
+                              {{ old('sms_consent') ? 'checked' : '' }}>
+                           <label for="sms_consent" style="margin:0;font-size:13px;color:#555;line-height:1.6;cursor:pointer;">
+                              By checking this box, you agree to receive SMS messages from Pathfinder 311 related to service requests, appointment reminders, and customer support. Message frequency may vary. Message &amp; data rates may apply. Reply STOP to opt out. Reply HELP for help.
+                           </label>
+                        </div>
+
                         <button type="submit" class="tp-btn back-bg"><span>Send Message</span></button>
                      </form>
+
+                     <p style="margin-top:14px;font-size:13px;color:#777;text-align:center;">
+                        <a href="{{ route('privacy') }}" target="_blank" style="color:#1a2b4a;text-decoration:underline;">View our Privacy Policy</a>
+                        and
+                        <a href="{{ route('terms') }}" target="_blank" style="color:#1a2b4a;text-decoration:underline;">Terms of Service</a>.
+                     </p>
                   </div>
                </div>
             </div>
