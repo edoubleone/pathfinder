@@ -37,7 +37,7 @@
                     <p>
                         <strong>Pathfinder 311</strong><br>
                         Email: <a href="mailto:info@pathfinder311.com">info@pathfinder311.com</a><br>
-                        Phone: <a href="tel:2402647547">240-264-7547</a><br>
+                        Phone: <a href="tel:13013375076">+1 (301) 337-5076</a><br>
                         Address: 1401 Mercantile Lane, Largo, MD 20721 Suite 531
                     </p>
                 </div>

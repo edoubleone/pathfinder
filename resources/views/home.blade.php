@@ -9,7 +9,7 @@
          <div class="col-xl-9 col-lg-8 col-md-6">
             <div class="header-top__left-info">
                <ul>
-                  <li class="d-none d-xl-inline-block"><a href="tel:2402647547"><i class="fas fa-phone-alt"></i>240-264-7547</a></li>
+                  <li class="d-none d-xl-inline-block"><a href="tel:13013375076"><i class="fas fa-phone-alt"></i>+1 (301) 337-5076</a></li>
                   <li class="d-none d-lg-inline-block"><a href="#" target="_blank"><i class="fas fa-map-marker-alt"></i>1401 Mercantile Lane, Largo, MD 20721 Suite 531</a></li>
                </ul>
             </div>
@@ -603,10 +603,9 @@
    <!-- cta-area-end -->
 
    <!-- schedule-popup-start -->
-   {{-- Iframe placed at body level so nextaflow's overlay renders full-screen correctly --}}
    <iframe
       src="https://link.nextaflow.net/widget/form/UN7kHoKuSKFnaSgzjP1B"
-      style="display:none;width:100%;height:100%;border:none;border-radius:4px"
+      style="display:none;width:0;height:0;border:none;"
       id="popup-UN7kHoKuSKFnaSgzjP1B"
       data-layout="{'id':'POPUP'}"
       data-trigger-type="alwaysShow"
@@ -623,33 +622,46 @@
    </iframe>
    <script src="https://link.nextaflow.net/js/form_embed.js"></script>
    <script>
-      (function () {
-         var popupId = 'popup-UN7kHoKuSKFnaSgzjP1B';
+   (function () {
+      var pid     = 'popup-UN7kHoKuSKFnaSgzjP1B';
+      var overlay = function () { return document.getElementById(pid + '-overlay'); };
+      var box     = function () { return document.getElementById(pid + '-div'); };
 
-         function nfOverlay() { return document.getElementById(popupId + '-overlay'); }
-         function nfDiv()     { return document.getElementById(popupId + '-div'); }
+      /* Show the nextaflow popup */
+      function openPopup(e) {
+         if (e) e.preventDefault();
+         var o = overlay(), b = box();
+         if (o) o.style.display = 'block';
+         if (b) b.style.display = 'block';
+      }
 
-         function openPopup(e) {
-            e.preventDefault();
-            var o = nfOverlay(), d = nfDiv();
-            if (o) o.style.display = 'block';
-            if (d) d.style.display = 'block';
-         }
+      /* Hide the nextaflow popup (suppress auto-show on load) */
+      function suppress() {
+         var o = overlay(), b = box();
+         if (o) o.style.display = 'none';
+         if (b) b.style.display = 'none';
+      }
 
-         // Suppress the auto-show on page load; buttons take control
-         window.addEventListener('load', function () {
-            setTimeout(function () {
-               var o = nfOverlay(), d = nfDiv();
-               if (o) o.style.display = 'none';
-               if (d) d.style.display = 'none';
-            }, 50);
-         });
-
-         // Wire up all schedule/call buttons
-         document.querySelectorAll('a[href="{{ route('contact') }}"]').forEach(function (el) {
+      /* Wire every contact-route link on this page to open the popup */
+      function wireButtons() {
+         document.querySelectorAll('a[href="{{ route('contact') }}"]:not([data-no-popup])').forEach(function (el) {
+            el.removeEventListener('click', openPopup); // avoid double-binding
             el.addEventListener('click', openPopup);
          });
-      })();
+      }
+
+      /* Suppress nextaflow's own auto-show across multiple timing windows */
+      suppress();
+      document.addEventListener('DOMContentLoaded', function () {
+         wireButtons();
+         suppress();
+      });
+      window.addEventListener('load', function () {
+         suppress();
+         setTimeout(suppress, 100);
+         setTimeout(suppress, 500);
+      });
+   })();
    </script>
    <!-- schedule-popup-end -->
 

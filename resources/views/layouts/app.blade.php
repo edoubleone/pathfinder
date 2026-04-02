@@ -63,7 +63,7 @@
                            <li class="{{ request()->routeIs('about') ? 'active' : '' }}"><a href="{{ route('about') }}">About Us</a></li>
                            <li class="{{ request()->routeIs('services') ? 'active' : '' }}"><a href="{{ route('services') }}">Services</a></li>
                            <li class="{{ request()->routeIs('process') ? 'active' : '' }}"><a href="{{ route('process') }}">Our Process</a></li>
-                           <li class="{{ request()->routeIs('contact') ? 'active' : '' }}"><a href="{{ route('contact') }}">Contact Us</a></li>
+                           <li class="{{ request()->routeIs('contact') ? 'active' : '' }}"><a href="{{ route('contact') }}" data-no-popup>Contact Us</a></li>
                         </ul>
                      </nav>
                   </div>
@@ -124,7 +124,7 @@
                </div>
                <div class="tpoffcanvas__info-address">
                   <span>Phone</span>
-                  <a href="tel:2402647547">240-264-7547</a>
+                  <a href="tel:13013375076">+1 (301) 337-5076</a>
                </div>
             </div>
             <div class="tp-info-wrapper mb-20 d-flex align-items-center">
@@ -186,7 +186,7 @@
                            <li><a href="{{ route('about') }}">About Us</a></li>
                            <li><a href="{{ route('services') }}">Services</a></li>
                            <li><a href="{{ route('process') }}">Our Process</a></li>
-                           <li><a href="{{ route('contact') }}">Contact Us</a></li>
+                           <li><a href="{{ route('contact') }}" data-no-popup>Contact Us</a></li>
                            <li><a href="{{ route('terms') }}">Terms of Service</a></li>
                            <li><a href="{{ route('privacy') }}">Privacy Policy</a></li>
                         </ul>
@@ -213,7 +213,7 @@
                            <i class="fas fa-phone-alt"></i>
                         </div>
                         <div class="footer__number">
-                           <a href="tel:2402647547">240-264-7547</a>
+                           <a href="tel:13013375076">+1 (301) 337-5076</a>
                            <span>Schedule a Call Online</span>
                         </div>
                      </div>
