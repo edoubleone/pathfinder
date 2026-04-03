@@ -68,7 +68,7 @@
                   </div>
                   <div class="tp-contact-info mb-40">
                      <h4 class="contact-title">Phone Number</h4>
-                     <span><a href="tel:2402647547">240-264-7547</a></span>
+                     <span><a href="tel:13013375076">+1 (301) 337-5076</a></span>
                   </div>
                   <div class="tp-contact-info">
                      <h4 class="contact-title">Location</h4>
