@@ -52,7 +52,7 @@
             <div class="row align-items-center">
                <div class="col-xl-2 col-lg-2 col-md-6 col-6">
                   <div class="header-bottom__logo z-index-5">
-                     <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo/logo-pathfinder.png') }}" alt="Pathfinder311"></a>
+                     <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo/transp-1.png') }}" alt="Pathfinder311"></a>
                   </div>
                </div>
                <div class="col-xl-7 col-lg-7 d-none d-lg-block">
@@ -100,7 +100,7 @@
          </div>
          <div class="tpoffcanvas__logo">
             <a href="{{ route('home') }}">
-               <img src="{{ asset('assets/img/logo/logo-pathfinder.png') }}" alt="Pathfinder311">
+               <img src="{{ asset('assets/img/logo/green.svg') }}" alt="Pathfinder311">
             </a>
          </div>
          <div class="tpoffcanvas__text">
@@ -162,7 +162,7 @@
                <div class="col-xl-3 col-lg-6 col-md-6 mb-40 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">
                   <div class="footer__widget footer-col-1">
                      <div class="footer__logo">
-                        <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo/logo-pathfinder.png') }}" alt="Pathfinder311"></a>
+                        <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo/transp-white.png') }}" alt="Pathfinder311"></a>
                      </div>
                      <div class="footer__content">
                         <p>Pathfinder311 helps individuals and small business owners protect profits, remain compliant, and build financially sound businesses through proper structure and strategic planning.</p>
