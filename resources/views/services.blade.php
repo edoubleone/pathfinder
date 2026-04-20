@@ -67,7 +67,7 @@
          </div>
          <div class="row justify-content-center">
             <!-- Business Formation & Structuring -->
-            <div class="col-xl-4 col-lg-6 mb-30">
+            <div class="col-xl-4 col-lg-6 mb-30" id="business-formation">
                <div class="service__item h-100 p-relative">
                   <div class="service__top-icon">
                      <span><i class="fas fa-briefcase"></i></span>
@@ -83,7 +83,7 @@
                </div>
             </div>
             <!-- Tax Filing & IRS Readiness -->
-            <div class="col-xl-4 col-lg-6 mb-30">
+            <div class="col-xl-4 col-lg-6 mb-30" id="tax-filing">
                <div class="service__item h-100 p-relative">
                   <div class="service__top-icon">
                      <span><i class="fas fa-file-invoice-dollar"></i></span>
@@ -100,7 +100,7 @@
                </div>
             </div>
             <!-- Profit & Loss (P&L) Preparation -->
-            <div class="col-xl-4 col-lg-6 mb-30">
+            <div class="col-xl-4 col-lg-6 mb-30" id="profit-loss">
                <div class="service__item h-100 p-relative">
                   <div class="service__top-icon">
                      <span><i class="fas fa-file-invoice"></i></span>
@@ -116,7 +116,7 @@
                </div>
             </div>
             <!-- Business Bank Account Setup -->
-            <div class="col-xl-4 col-lg-6 mb-30 mt-xl-0 mt-lg-0 mt-30">
+            <div class="col-xl-4 col-lg-6 mb-30 mt-xl-0 mt-lg-0 mt-30" id="bank-account">
                <div class="service__item h-100 p-relative">
                   <div class="service__top-icon">
                      <span><i class="fas fa-university"></i></span>
@@ -132,7 +132,7 @@
                </div>
             </div>
             <!-- Audit Support -->
-            <div class="col-xl-4 col-lg-6 mb-30 mt-xl-0 mt-lg-0 mt-30">
+            <div class="col-xl-4 col-lg-6 mb-30 mt-xl-0 mt-lg-0 mt-30" id="audit-support">
                <div class="service__item h-100 p-relative">
                   <div class="service__top-icon">
                      <span><i class="fas fa-shield-alt"></i></span>
