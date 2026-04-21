@@ -133,7 +133,7 @@
                      <span><i class="fas fa-briefcase"></i></span>
                   </div>
                   <div class="service__content z-index">
-                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}">Business Formation & Structuring</a></h4>
+                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}#business-formation">Business Formation & Structuring</a></h4>
                      <ul class="service-list">
                         <li>LLC and corporate structuring guidance</li>
                         <li>IRS-friendly business setup</li>
@@ -148,7 +148,7 @@
                      <span><i class="fas fa-file-invoice-dollar"></i></span>
                   </div>
                   <div class="service__content z-index">
-                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}">Tax Filing & IRS Readiness</a></h4>
+                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}#tax-filing">Tax Filing & IRS Readiness</a></h4>
                      <ul class="service-list">
                         <li>Individual and business tax filing</li>
                         <li>Compliance-focused preparation</li>
@@ -164,7 +164,7 @@
                      <span><i class="fas fa-file-invoice"></i></span>
                   </div>
                   <div class="service__content z-index">
-                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}">Profit & Loss (P&L) Preparation</a></h4>
+                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}#profit-loss">Profit & Loss (P&L) Preparation</a></h4>
                      <ul class="service-list">
                         <li>Monthly and annual P&L statements</li>
                         <li>Expense tracking and categorization</li>
@@ -179,7 +179,7 @@
                      <span><i class="fas fa-university"></i></span>
                   </div>
                   <div class="service__content z-index">
-                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}">Business Bank Account Setup</a></h4>
+                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}#bank-account">Business Bank Account Setup</a></h4>
                      <ul class="service-list">
                         <li>Proper SMB banking setup</li>
                         <li>Separation of personal and business finances</li>
@@ -194,7 +194,7 @@
                      <span><i class="fas fa-shield-alt"></i></span>
                   </div>
                   <div class="service__content z-index">
-                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}">Audit Support</a></h4>
+                     <h4 class="service__title-sm mb-15"><a href="{{ route('services') }}#audit-support">Audit Support</a></h4>
                      <ul class="service-list">
                         <li>Audit readiness reviews</li>
                         <li>Financial record assessment</li>
@@ -520,7 +520,7 @@
                </div>
                <div class="text-center mt-50 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".5s">
                   <p class="mb-25">Still have questions? We're happy to help.</p>
-                  <a href="{{ route('contact') }}" class="tp-btn">Contact Us</a>
+                  <a href="{{ route('contact') }}" class="tp-btn" data-no-popup>Contact Us</a>
                </div>
             </div>
          </div>
