@@ -1,9 +1,10 @@
 <!doctype html>
 <html class="no-js" lang="zxx">
+
 <head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>@yield('title', 'Pathfinder311 – Independent Life Insurance & Financial Protection Specialist')</title>
+   <title>@yield('title', 'Pathfinders527 LLC – Independent Life Insurance & Financial Protection Specialist')</title>
    <meta name="description" content="@yield('meta_description', '')">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -52,7 +53,7 @@
             <div class="row align-items-center">
                <div class="col-xl-2 col-lg-2 col-md-6 col-6">
                   <div class="header-bottom__logo z-index-5">
-                     <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo/transp-1.png') }}" alt="Pathfinder311"></a>
+                     <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo/transp-1.png') }}" alt="Pathfinders527 LLC"></a>
                   </div>
                </div>
                <div class="col-xl-7 col-lg-7 d-none d-lg-block">
@@ -100,11 +101,11 @@
          </div>
          <div class="tpoffcanvas__logo">
             <a href="{{ route('home') }}">
-               <img src="{{ asset('assets/img/logo/green.svg') }}" alt="Pathfinder311">
+               <img src="{{ asset('assets/img/logo/green.svg') }}" alt="Pathfinders527 LLC">
             </a>
          </div>
          <div class="tpoffcanvas__text">
-            <p>At Pathfinder311, we believe your financial path should be clear, not confusing. We work for you, not the insurance companies.</p>
+            <p>At Pathfinders527 LLC, we believe your financial path should be clear, not confusing. We work for you, not the insurance companies.</p>
          </div>
          <div class="mobile-menu"></div>
          <div class="tpoffcanvas__info">
@@ -115,7 +116,7 @@
                </div>
                <div class="tpoffcanvas__info-address">
                   <span>Email</span>
-                  <a href="mailto:info@pathfinder311.com">info@pathfinder311.com</a>
+                  <a href="mailto:info@pathfinders311.com">info@pathfinders311.com</a>
                </div>
             </div>
             <div class="tp-info-wrapper mb-20 d-flex align-items-center">
@@ -162,10 +163,10 @@
                <div class="col-xl-3 col-lg-6 col-md-6 mb-40 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".3s">
                   <div class="footer__widget footer-col-1">
                      <div class="footer__logo">
-                        <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo/transp-white.png') }}" alt="Pathfinder311"></a>
+                        <a href="{{ route('home') }}"><img src="{{ asset('assets/img/logo/transp-white.png') }}" alt="Pathfinders527 LLC"></a>
                      </div>
                      <div class="footer__content">
-                        <p>Pathfinder311 helps individuals and small business owners protect profits, remain compliant, and build financially sound businesses through proper structure and strategic planning.</p>
+                        <p>Pathfinders527 LLC helps individuals and small business owners protect profits, remain compliant, and build financially sound businesses through proper structure and strategic planning.</p>
                      </div>
                      <div class="footer__social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -200,7 +201,7 @@
                      </div>
                      <div class="footer__address">
                         <ul>
-                           <li><a href="mailto:info@pathfinder311.com"><i class="fas fa-envelope"></i><span>info@pathfinder311.com</span></a></li>
+                           <li><a href="mailto:info@pathfinders311.com"><i class="fas fa-envelope"></i><span>info@pathfinders311.com</span></a></li>
                            <li><a href="https://maps.app.goo.gl/wJd1Wf39S2D5bH7RA" target="_blank"><i class="fas fa-map-marker-alt"></i><span>1401 Mercantile Lane, Largo, MD 20721 Suite 531</span></a></li>
                         </ul>
                      </div>
@@ -254,12 +255,13 @@
    <script src="{{ asset('assets/js/isotope-pkgd.js') }}"></script>
    <script src="{{ asset('assets/js/imagesloaded-pkgd.js') }}"></script>
    <script src="{{ asset('assets/js/main.js') }}"></script>
-   <script 
-      src="https://widgets.leadconnectorhq.com/loader.js"  
-      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
-      data-widget-id="69b3cb38d3796644356f6683"   > 
+   <script
+      src="https://widgets.leadconnectorhq.com/loader.js"
+      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+      data-widget-id="69b3cb38d3796644356f6683">
    </script>
    @yield('extra_js')
 
 </body>
+
 </html>

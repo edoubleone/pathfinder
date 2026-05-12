@@ -9,7 +9,7 @@
         <div class="col-lg-10 mx-auto">
             <div class="privacy-content">
                 <h2>Terms of Service – Pathfinder 311</h2>
-            
+
                 <p>By submitting your information through our website or contacting Pathfinder 311, you agree to receive communications related to your plumbing service requests.</p>
 
                 <p>These communications may include phone calls, emails, or SMS messages for appointment confirmations, service updates, and customer support notifications.</p>
@@ -40,6 +40,7 @@
         line-height: 1.8;
         color: #333;
     }
+
     .privacy-content h2 {
         margin-top: 40px;
         margin-bottom: 20px;
@@ -47,6 +48,7 @@
         font-weight: 700;
         color: #1a1a1a;
     }
+
     .privacy-content h3 {
         margin-top: 30px;
         margin-bottom: 15px;
@@ -54,28 +56,34 @@
         font-weight: 600;
         color: #1a1a1a;
     }
+
     .privacy-content p {
         margin-bottom: 15px;
         font-size: 15px;
     }
+
     .created-date {
         color: #666;
         font-size: 14px;
         margin-bottom: 30px;
     }
+
     .contact-info {
         background-color: #f5f5f5;
         padding: 20px;
         border-radius: 5px;
         margin: 20px 0;
     }
+
     .contact-info p {
         margin-bottom: 0;
     }
+
     .contact-info a {
         color: #1a2b4a;
         text-decoration: none;
     }
+
     .contact-info a:hover {
         text-decoration: underline;
     }

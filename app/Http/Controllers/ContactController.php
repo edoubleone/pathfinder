@@ -28,7 +28,7 @@ class ContactController extends Controller
             Mail::raw(
                 "Name: {$validated['name']}\nEmail: {$validated['email']}\n\nMessage:\n{$validated['message']}",
                 function ($mail) use ($validated) {
-                    $mail->to('info@pathfinder311.com')
+                    $mail->to('info@pathfinders311.com')
                         ->replyTo($validated['email'], $validated['name'])
                         ->subject('New Contact Form Submission from ' . $validated['name']);
                 }
@@ -76,7 +76,6 @@ class ContactController extends Controller
                 'body' => $response->body(),
                 'json' => $response->json()
             ]);
-
         } catch (\Exception $e) {
             Log::error('GoHighLevel API call failed', [
                 'error' => $e->getMessage()

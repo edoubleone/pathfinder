@@ -1,10 +1,11 @@
 # GDPR Cookie Consent Implementation Guide
 
-This document explains how to use the GDPR cookie consent system that has been integrated into your Pathfinder311 application.
+This document explains how to use the GDPR cookie consent system that has been integrated into your Pathfinders527 LLC application.
 
 ## Overview
 
 The cookie consent system includes:
+
 - **Visual Banner**: A GDPR-compliant cookie consent banner displayed to first-time visitors
 - **JavaScript Handler**: Manages user preferences and cookie compliance
 - **Backend Service**: PHP service to check user preferences from the backend
@@ -14,6 +15,7 @@ The cookie consent system includes:
 ## Files Created/Modified
 
 ### New Files:
+
 - `resources/views/components/cookie-consent.blade.php` - Cookie consent banner component
 - `public/assets/css/cookie-consent.css` - Banner styling
 - `public/assets/js/cookie-consent.js` - Banner JavaScript functionality
@@ -23,6 +25,7 @@ The cookie consent system includes:
 - `app/Helpers/CookieConsentHelper.php` - Helper functions
 
 ### Modified Files:
+
 - `resources/views/layouts/app.blade.php` - Added cookie consent component and assets
 - `routes/web.php` - Added privacy policy route
 - `composer.json` - Added helper file to autoload
@@ -30,6 +33,7 @@ The cookie consent system includes:
 ## Configuration
 
 Edit `config/cookie-consent.php` to customize:
+
 - Cookie name and expiry time
 - Cookie types and descriptions
 - Google Analytics ID (optional)
@@ -106,7 +110,7 @@ Access the cookie consent instance:
 // Check preferences
 if (window.CookieConsent) {
     const prefs = window.CookieConsent.getPreferences();
-    
+
     if (prefs && prefs.analytics) {
         // Load analytics
     }
@@ -119,16 +123,19 @@ if (window.CookieConsent) {
 ## Cookie Types
 
 ### Essential Cookies
+
 - **Default**: Always enabled
 - **Description**: Required for basic site functionality and security
 - **Cannot be disabled**
 
 ### Analytics Cookies
+
 - **Default**: Disabled unless consented
 - **Description**: Help understand user behavior and improve the site
 - **Services**: Google Analytics, Mixpanel, etc.
 
 ### Marketing Cookies
+
 - **Default**: Disabled unless consented
 - **Description**: Used for personalized advertising and tracking
 - **Services**: Facebook Pixel, LinkedIn, Google Ads, etc.
@@ -141,13 +148,15 @@ Uncomment and add your GA ID to `public/assets/js/cookie-consent.js`:
 
 ```javascript
 window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'YOUR_GA_ID');
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag("js", new Date());
+gtag("config", "YOUR_GA_ID");
 
-const script = document.createElement('script');
+const script = document.createElement("script");
 script.async = true;
-script.src = 'https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID';
+script.src = "https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID";
 document.head.appendChild(script);
 ```
 
@@ -191,6 +200,7 @@ The implementation includes:
 ### User Rights (GDPR Article 21-22)
 
 Users have the right to:
+
 - Access their personal data
 - Request deletion of data
 - Opt-out of processing
@@ -263,6 +273,7 @@ Then update the banner and JavaScript to handle the new type.
 ### Browser DevTools
 
 Check saved cookies:
+
 1. Open DevTools (F12)
 2. Go to Application > Cookies > Your Domain
 3. Look for `pathfinder_cookie_consent` cookie
@@ -272,10 +283,10 @@ Check saved cookies:
 
 ```json
 {
-  "essential": true,
-  "analytics": true,
-  "marketing": false,
-  "timestamp": 1629876543
+    "essential": true,
+    "analytics": true,
+    "marketing": false,
+    "timestamp": 1629876543
 }
 ```
 
@@ -338,6 +349,7 @@ GOOGLE_ANALYTICS_ID=UA-XXXXX-XX
 ### Future Enhancements
 
 Consider implementing:
+
 - Consent analytics dashboard
 - A/B testing banner designs
 - Preference manager page
